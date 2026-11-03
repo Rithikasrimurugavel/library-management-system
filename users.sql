@@ -1,0 +1,26 @@
+CREATE TABLE `User` (
+  `id` bigint(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `fname` varchar(50) NOT NULL,
+  `lname` varchar(50) NOT NULL,
+  `email` varchar(70) NOT NULL,
+  `password` varchar(60) NOT NULL,
+  `timemodified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+CREATE TABLE `ADDBOOK` (
+  `id` bigint(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `bname` varchar(255) NOT NULL,
+  `dept` varchar(25) NOT NULL
+);
+CREATE TABLE `issuebook` (
+    `id` bigint(15) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `bname` varchar(255) NOT NULL,
+    `semail` varchar(255) NOT NULL,
+    `issuedate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+
+
+
+ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
